@@ -17,7 +17,7 @@ echo "-----> Fetching latest Chromium"
 
 LASTCHANGE_URL="https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE"
 REVISION=$(curl -s -S $LASTCHANGE_URL)
-ZIP=URL="https://storage.googleapis.com/chrome-for-testing-public/${REVISION}/linux64/chrome-linux64.zip"
+ZIP_URL="https://storage.googleapis.com/chrome-for-testing-public/${REVISION}/linux64/chrome-linux64.zip"
 ZIP_FILE="chrome-linux64.zip"
 
 mkdir -p "$VENDOR_DIR"
